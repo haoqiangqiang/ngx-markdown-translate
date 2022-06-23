@@ -1,0 +1,23 @@
+<div class="header">
+    <div class="container">
+        <span class="title">ngx-markdown</span>
+        <span class="zhanwei"></span>
+        <a href="https://github.com/jfcere/ngx-markdown">
+            <img  class="github" src="assets/icon-github.svg" />
+        </a>
+    </div>
+</div>
+<div class="nav">
+    <div class="container nav-container">
+        <ng-container *ngFor="let nav of navs;index as i">
+            <div class="nav-item" [ngClass]="{'nav-item-active': activeIndex === i}" (click)="ChangeNav(i, nav.link)">
+                <img [src]="nav.img" />
+                <span>{{nav.title}}</span>
+                <div class="active-mark" *ngIf="activeIndex === i"></div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>

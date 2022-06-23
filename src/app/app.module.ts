@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AppBindingsComponent } from './pages/bindings/bindings.component';
 import { AppCheatSheetComponent } from './pages/cheatSheet/cheat-sheet.component';
 import { AppHomeComponent } from './pages/home/home.component';
 import { AppPluginsComponent } from './pages/plugins/plugins.component';
@@ -14,6 +15,7 @@ import { AppSyntaxHighlightComponent } from './pages/syntaxHighlight/syntax-high
 @NgModule({
   declarations: [
     AppComponent,
+    AppBindingsComponent,
     AppCheatSheetComponent,
     AppHomeComponent,
     AppPluginsComponent,
